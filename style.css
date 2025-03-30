@@ -148,7 +148,6 @@ body.gallery {
   
   .artwork img:hover {
     filter: grayscale(0%);
-    animation: glitch-border 0.3s steps(2, end) infinite;
   }
   
   .label {
@@ -159,12 +158,4 @@ body.gallery {
     text-align: left;
   }
   
-  @keyframes glitch-border {
-    0% { border-color: white; }
-    20% { border-color: red; }
-    40% { border-color: cyan; }
-    60% { border-color: lime; }
-    80% { border-color: magenta; }
-    100% { border-color: yellow; }
-  }
   
