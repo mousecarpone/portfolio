@@ -71,3 +71,30 @@
     100% { text-shadow: -2px 0 blue; }
   }
   
+body.centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+  }
+  
+  main.error h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+    letter-spacing: 2px;
+  }
+  
+  main.error p {
+    font-size: 1em;
+    color: #c0c0c0;
+    margin-bottom: 1em;
+  }
+  
+  .pixel-art {
+    width: 64px;
+    height: auto;
+    margin-bottom: 1em;
+    image-rendering: pixelated;
+  }
+  
