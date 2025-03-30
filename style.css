@@ -98,3 +98,73 @@ body.centered {
     image-rendering: pixelated;
   }
   
+body.gallery {
+    padding: 2vw;
+    display: block;
+  }
+  
+  .breadcrumb {
+    font-size: 0.9em;
+    margin-bottom: 2em;
+    text-transform: lowercase;
+  }
+  
+  .breadcrumb a {
+    color: #f5f5f5;
+    text-decoration: none;
+    margin-right: 0.3em;
+    position: relative;
+    transition: color 0.3s ease;
+  }
+  
+  .breadcrumb a:hover {
+    animation: glitch 0.3s steps(2, end) infinite;
+    color: #aaa;
+  }
+  
+  .breadcrumb .active {
+    color: #ff69b4; 
+    pointer-events: none;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2em;
+  }
+  
+  .artwork {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .artwork img {
+    width: 100%;
+    border: 2px solid #fff;
+    filter: grayscale(100%);
+    transition: all 0.3s ease;
+  }
+  
+  .artwork img:hover {
+    filter: grayscale(0%);
+    animation: glitch-border 0.3s steps(2, end) infinite;
+  }
+  
+  .label {
+    margin-top: 0.5em;
+    font-size: 0.9em;
+    color: #c0c0c0;
+    line-height: 1.4;
+    text-align: left;
+  }
+  
+  @keyframes glitch-border {
+    0% { border-color: white; }
+    20% { border-color: red; }
+    40% { border-color: cyan; }
+    60% { border-color: lime; }
+    80% { border-color: magenta; }
+    100% { border-color: yellow; }
+  }
+  
