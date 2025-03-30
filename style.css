@@ -154,23 +154,10 @@
   .artwork img {
     width: 100%;
     border: 2px solid #fff;
-    filter: grayscale(100%);
     transition: all 0.3s ease;
   }
   
-  .artwork img:hover {
-    filter: grayscale(0%);
-    animation: glitch-border 0.3s steps(2, end) infinite;
-  }
   
-  @keyframes glitch-border {
-    0% { border-color: white; }
-    20% { border-color: red; }
-    40% { border-color: cyan; }
-    60% { border-color: lime; }
-    80% { border-color: magenta; }
-    100% { border-color: yellow; }
-  }
   
   .label {
     margin-top: 0.5em;
