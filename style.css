@@ -71,7 +71,7 @@
     100% { text-shadow: -2px 0 blue; }
   }
   
-body.centered {
+  body.centered {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -98,9 +98,10 @@ body.centered {
     image-rendering: pixelated;
   }
   
-body.gallery {
+  body.gallery {
     padding: 2vw;
     display: block;
+    height: auto;
   }
   
   .breadcrumb {
@@ -123,26 +124,52 @@ body.gallery {
   }
   
   .breadcrumb .active {
-    color: #ff69b4; 
+    color: #ff69b4;
     pointer-events: none;
   }
   
   .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2em;
+    column-count: 3;
+    column-gap: 2em;
+  }
+  
+  @media (max-width: 1000px) {
+    .grid {
+      column-count: 2;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .grid {
+      column-count: 1;
+    }
   }
   
   .artwork {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 2em;
   }
   
   .artwork img {
     width: 100%;
     border: 2px solid #fff;
+    filter: grayscale(100%);
     transition: all 0.3s ease;
+  }
+  
+  .artwork img:hover {
+    filter: grayscale(0%);
+    animation: glitch-border 0.3s steps(2, end) infinite;
+  }
+  
+  @keyframes glitch-border {
+    0% { border-color: white; }
+    20% { border-color: red; }
+    40% { border-color: cyan; }
+    60% { border-color: lime; }
+    80% { border-color: magenta; }
+    100% { border-color: yellow; }
   }
   
   .label {
@@ -152,5 +179,4 @@ body.gallery {
     line-height: 1.4;
     text-align: left;
   }
-  
   
