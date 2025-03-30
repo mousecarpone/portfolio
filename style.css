@@ -146,10 +146,6 @@ body.gallery {
     transition: all 0.3s ease;
   }
   
-  .artwork img:hover {
-    filter: grayscale(0%);
-  }
-  
   .label {
     margin-top: 0.5em;
     font-size: 0.9em;
