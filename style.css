@@ -142,7 +142,6 @@ body.gallery {
   .artwork img {
     width: 100%;
     border: 2px solid #fff;
-    filter: grayscale(100%);
     transition: all 0.3s ease;
   }
   
