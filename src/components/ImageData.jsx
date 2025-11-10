@@ -3,6 +3,7 @@ const BASE = "/portfolio";
 const images = [
   {
     id: "1",
+    title: "SQUARES",
     description: "12x8 - photography",
     thumbnail: `/media/squares_thumb.jpg`,
     fullImage: `/media/squares.jpg`,
@@ -12,6 +13,7 @@ const images = [
   },
   {
     id: "2",
+    title: "MOUSE",
     description: "4x6 - digital",
     thumbnail: "/media/mouse_thumb.jpg",
     fullImage: "/media/mouse.jpg",
@@ -21,6 +23,7 @@ const images = [
   },
   {
     id: "4",
+    title: "CMYK",
     description: "11x11 - lino block: ink, paper",
     thumbnail: "/media/cmyk_thumb.jpg",
     fullImage: "/media/cmyk.jpg",
@@ -30,6 +33,7 @@ const images = [
   },
   {
     id: "5",
+    title: "BEAR ONE",
     description: "18X24 - monotype: ink, paper",
     thumbnail: "/media/bear1_thumb.jpg",
     fullImage: "/media/bear1.jpg",
@@ -39,6 +43,7 @@ const images = [
   },
   {
     id: "6",
+    title: "BEAR TWO",
     description: "18X24 - monotype: ink, paper",
     thumbnail: "/media/bear2_thumb.jpg",
     fullImage: "/media/bear2.jpg",
@@ -48,6 +53,7 @@ const images = [
   },
   {
     id: "8",
+    title: "MOURNING",
     description: "N/A - cardboard, fabric, acrylic",
     thumbnail: "/media/mourning_thumb.jpg",
     fullImage: "/media/mourning.jpg",
@@ -57,6 +63,7 @@ const images = [
   },
   {
     id: "9",
+    title: "BREATH",
     description: "N/A - newsprint",
     thumbnail: "/media/newsprint_thumb.jpg",
     fullImage: "/media/newsprint.jpg",
@@ -66,6 +73,7 @@ const images = [
   },
   {
     id: "11",
+    title: "ILU",
     description: "8x6 - digital",
     thumbnail: "/media/ilu_thumb.jpg",
     fullImage: "/media/ilu.jpg",
@@ -75,6 +83,7 @@ const images = [
   },
   {
     id: "12",
+    title: "WONDERLAND",
     description: "11x17 - digital",
     thumbnail: "/media/wonderland_thumb.jpg",
     fullImage: "/media/wonderland.jpg",
@@ -84,6 +93,7 @@ const images = [
   },
   {
     id: "13",
+    title: "BURGER",
     description: "11x14 - digital",
     thumbnail: "/media/burger_thumb.jpg",
     fullImage: "/media/burger.jpg",
@@ -93,6 +103,7 @@ const images = [
   },
   {
     id: "15",
+    title: "LARAMIE",
     description: "5x4 - digital",
     thumbnail: "/media/wyo_thumb.jpg",
     fullImage: "/media/wyo.jpg",
@@ -102,6 +113,7 @@ const images = [
   },
   {
     id: "16",
+    title: "REARVIEW",
     description: "5.75x4 - solar plate: ink, paper",
     thumbnail: "/media/rearview_thumb.jpg",
     fullImage: "/media/rearview.jpg",
@@ -111,6 +123,7 @@ const images = [
   },
   {
     id: "17",
+    title: "DENVER",
     description: "18x24 - monotype: ink, paper",
     thumbnail: "/media/denver_thumb.jpg",
     fullImage: "/media/denver.jpg",
@@ -120,6 +133,7 @@ const images = [
   },
   {
     id: "18",
+    title: "VENICE",
     description: "11x8.5 - cyanotype: acrylic, thread",
     thumbnail: "/media/venice_thumb.jpg",
     fullImage: "/media/venice.jpg",
@@ -129,6 +143,7 @@ const images = [
   },
   {
     id: "20",
+    title: "ALTAR",
     description: "24x15 - acrylic, canvas",
     thumbnail: "/media/altar_thumb.jpg",
     fullImage: "/media/altar.jpg",
@@ -138,6 +153,7 @@ const images = [
   },
   {
     id: "21",
+    title: "HOARD",
     description: "16x24 - chalk, paper",
     thumbnail: "/media/hoard_thumb.jpg",
     fullImage: "/media/hoard.jpg",
@@ -147,6 +163,7 @@ const images = [
   },
   {
     id: "23",
+    title: "ROT",
     description: "24x18 - monotype: graphite, paper",
     thumbnail: "/media/rot_thumb.jpg",
     fullImage: "/media/rot.jpg",
@@ -156,6 +173,7 @@ const images = [
   },
   {
     id: "24",
+    title: "FAIRYTALES",
     description: "24x24 - monotype: graphite, canvas",
     thumbnail: "/media/fairytales_thumb.jpg",
     fullImage: "/media/fairytales.jpg",
@@ -165,6 +183,7 @@ const images = [
   },
   {
     id: "25",
+    title: "VENUS",
     description: "18x24 - charcoal, paper",
     thumbnail: "/media/venus_thumb.jpg",
     fullImage: "/media/venus.jpg",
@@ -174,6 +193,7 @@ const images = [
   },
   {
     id: "27",
+    title: "ASHKELON",
     description: "11x17 - wood block: ink, paper, thread",
     thumbnail: "/media/ashkelon_thumb.jpg",
     fullImage: "/media/ashkelon.jpg",
@@ -183,6 +203,7 @@ const images = [
   },
   {
     id: "28",
+    title: "CATALHOYUK",
     description: "11x12 - collagraph: gouache, paper",
     thumbnail: "/media/catalhoyuk_thumb.jpg",
     fullImage: "/media/catalhoyuk.jpg",
@@ -192,6 +213,7 @@ const images = [
   },
   {
     id: "32",
+    title: "INTERTIDAL",
     description: "12x12, woodblock - ink, paper",
     thumbnail: "/media/intertidal.jpg",
     fullImage: "/media/intertidal.jpg",
