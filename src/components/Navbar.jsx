@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 import Logo from '../Logo';
-import './Navbar.css';
+import '../styles/Navbar.css';
 import '../styles/style.css';
 
 const Navbar = () => {
@@ -61,7 +61,7 @@ const Navbar = () => {
       <ul className={`nav-links ${menuOpen ? 'open' : ''}`}>
         <li>
           <NavLink
-            to="/"
+            to="/studio"
             end
             className={({ isActive }) => isActive ? 'glitch-soft active' : 'glitch-fast'}
           >

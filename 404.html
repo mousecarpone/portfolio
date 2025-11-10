@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>lost?</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      background-color: black;
+      color: #FAF9F6;
+      font-family: 'IBM Plex Mono', monospace;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    h1 {
+      font-size: 2rem;
+      letter-spacing: 0.1em;
+      text-align: center;
+      animation: flicker 3s infinite alternate;
+    }
+
+    p {
+      margin-top: 1rem;
+      font-size: 1rem;
+      opacity: 0.8;
+    }
+
+    a {
+      margin-top: 2rem;
+      text-decoration: none;
+      color: #FF3CAC;
+      font-weight: bold;
+      border: 1px solid #FF3CAC;
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+
+    a:hover {
+      background: #FF3CAC;
+      color: black;
+    }
+
+    @keyframes flicker {
+      0% { opacity: 1; }
+      45% { opacity: 0.9; }
+      50% { opacity: 0.6; }
+      55% { opacity: 0.95; }
+      60% { opacity: 0.4; }
+      70% { opacity: 0.85; }
+      100% { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <h1>you wandered too far</h1>
+  <p>there’s nothing here.</p>
+  <a href="/portfolio/#/" class="enter-button">take me home</a>
+</body>
+</html>

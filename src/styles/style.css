@@ -159,12 +159,12 @@ a:not(.active):hover {
     text-align: center;
   }
   
-  .projects-title {
+  .title {
     font-size: 2.5rem;
     margin-bottom: 0.5rem;
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    color: var(--neon);
+    color: var(--white);
   }
   
   .projects-sub {
@@ -312,4 +312,32 @@ a:not(.active):hover {
   white-space: nowrap;
   font-size: 0.9rem;
   letter-spacing: 0.05em;
+}
+
+.intro-page {
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--neon);
+  text-align: center;
+}
+
+.intro-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-family: var(--font);
+}
+
+.enter-link {
+  color: var(--white);
+  text-decoration: none;
+  font-size: 1.25rem;
+  transition: color 0.2s ease;
+}
+
+.enter-link:hover {
+  color: var(--neon);
+  animation: glitch-cmyk-fast 400ms steps(2, end);
 }

@@ -1,8 +1,8 @@
 import React, { useState, useRef, useEffect } from 'react';
-import Node from './Node';
-import ConnectionLine from './ConnectionLine';
-import DetailPopup from './DetailPopup';
-import images from './ImageData';
+import Node from './components/Node';
+import ConnectionLine from './components/ConnectionLine';
+import DetailPopup from './components/DetailPopup';
+import images from './components/ImageData';
 
 const Studio = () => {
   const [selected, setSelected] = useState(null);

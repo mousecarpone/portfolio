@@ -1,10 +1,12 @@
+const BASE = "/portfolio";
+
 const images = [
   {
     id: "1",
     title: "SQUARES",
     description: "12x8 - photography",
-    thumbnail: "/media/squares_thumb.jpg",
-    fullImage: "/media/squares.jpg",
+    thumbnail: `/media/squares_thumb.jpg`,
+    fullImage: `/media/squares.jpg`,
     connections: ["3"],
     widthIn: 12, 
     heightIn: 8 
@@ -18,13 +20,6 @@ const images = [
     connections: ["3"],
     widthIn: 4, 
     heightIn: 6 
-  },
-  {
-    id: "3",
-    type: "label",
-    label: "ENVIRONS",
-    radius: 20,
-    connections: ["2","1","31"]
   },
   {
     id: "4",
@@ -57,13 +52,6 @@ const images = [
     heightIn: 24 
   },
   {
-    id: "7",
-    type: "label",
-    label: "EXPERIMENT",
-    radius: 20,
-    connections: ["4","5","6","31"]
-  },
-  {
     id: "8",
     title: "MOURNING",
     description: "N/A - cardboard, fabric, acrylic",
@@ -82,13 +70,6 @@ const images = [
     connections: ["10"],
     widthIn: 12, 
     heightIn: 15 
-  },
-  {
-    id: "10",
-    type: "label",
-    label: "WORN",
-    radius: 20,
-    connections: ["8","9","31"]
   },
   {
     id: "11",
@@ -119,13 +100,6 @@ const images = [
     connections: ["14"],
     widthIn: 11, 
     heightIn: 14.5 
-  },
-  {
-    id: "14",
-    type: "label",
-    label: "DIGITAL",
-    radius: 20,
-    connections: ["11","12","13","31"]
   },
   {
     id: "15",
@@ -168,13 +142,6 @@ const images = [
     heightIn: 8.5 
   },
   {
-    id: "19",
-    type: "label",
-    label: "STRUCTURE",
-    radius: 20,
-    connections: ["15","16","17","18","31"]
-  },
-  {
     id: "20",
     title: "ALTAR",
     description: "24x15 - acrylic, canvas",
@@ -193,13 +160,6 @@ const images = [
     connections: ["22"],
     widthIn: 16, 
     heightIn: 24 
-  },
-  {
-    id: "22",
-    type: "label",
-    label: "RITUAL",
-    radius: 20,
-    connections: ["20","21","31"]
   },
   {
     id: "23",
@@ -232,13 +192,6 @@ const images = [
     heightIn: 24 
   },
   {
-    id: "26",
-    type: "label",
-    label: "RUINS",
-    radius: 20,
-    connections: ["23","24","25","30"]
-  },
-  {
     id: "27",
     title: "ASHKELON",
     description: "11x17 - wood block: ink, paper, thread",
@@ -259,11 +212,70 @@ const images = [
     heightIn: 12 
   },
   {
+    id: "32",
+    title: "INTERTIDAL",
+    description: "12x12, woodblock - ink, paper",
+    thumbnail: "/media/intertidal.jpg",
+    fullImage: "/media/intertidal.jpg",
+    connections: ["3"],
+    widthIn: 12, 
+    heightIn: 12 
+  },
+  {
+    id: "3",
+    type: "label",
+    label: "ENVIRONS",
+    radius: 20,
+    connections: ["2","1","31", "32"]
+  },
+  {
+    id: "7",
+    type: "label",
+    label: "EXPERIMENT",
+    radius: 20,
+    connections: ["4","5","6","31"]
+  },
+  {
+    id: "10",
+    type: "label",
+    label: "WORN",
+    radius: 20,
+    connections: ["8","9","31"]
+  },
+  {
+    id: "14",
+    type: "label",
+    label: "DIGITAL",
+    radius: 20,
+    connections: ["11","12","13","31"]
+  },
+  {
+    id: "19",
+    type: "label",
+    label: "STRUCTURE",
+    radius: 20,
+    connections: ["15","16","17","18","31"]
+  },
+  {
+    id: "22",
+    type: "label",
+    label: "RITUAL",
+    radius: 20,
+    connections: ["20","21","31"]
+  },
+  {
+    id: "26",
+    type: "label",
+    label: "RUINS",
+    radius: 20,
+    connections: ["23","24","25","30"]
+  },
+  {
     id: "29",
     type: "label",
     label: "BURIAL",
     radius: 20,
-    connections: ["27","28","31"]
+    connections: ["27","28","30"]
   },
   {
     id: "30",
@@ -273,14 +285,11 @@ const images = [
     connections: ["29","31"]
   },
   {
-    id: "32",
-    title: "INTERTIDAL",
-    description: "12x12, woodblock - ink, paper",
-    thumbnail: "/media/intertidal_thumb.jpg",
-    fullImage: "/media/intertidal.jpg",
-    connections: ["9"],
-    widthIn: 12, 
-    heightIn: 12 
+    id: "31",
+    type: "label",
+    label: "WORKS",
+    radius: 20,
+    connections: ["3", "7","10","14","19","22","30"]
   },
 ];
 

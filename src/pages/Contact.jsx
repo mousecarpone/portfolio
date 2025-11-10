@@ -1,11 +1,10 @@
 import React from 'react';
-import '../styles/style.css';
 
 const Contact = () => {
   return (
     <div className="contact-container">
+      <h1 className="title">I'M HERE</h1>
       <div className="contact-content">
-        <h1 className="glitch-soft contact-title">I'M HERE</h1>
         <p className="contact-description">
           some places you can find me. 
         </p>
